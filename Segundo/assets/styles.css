@@ -189,6 +189,9 @@ section {
     .nav-contact {
         display: none;
     }
+    .nav-itens li {
+        padding-left: 38%;
+    }
 }
 
 @media (max-width:746px) {
