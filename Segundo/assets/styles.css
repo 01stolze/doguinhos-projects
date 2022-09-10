@@ -14,40 +14,43 @@ html {
 
 .nav {
     display: flex;
-    height: 16vh;
+    justify-content: space-around;
+    text-align: center;
+    height: 3cm;
     overflow: hidden;
     position: fixed;
     background-color: #fff;
     width: 100%;
 }
 section {
-    padding-top: 16vh; 
+    padding-top: 3cm; 
 }
 
 .logo-title {
     font-size: 28px;
-    padding: 40px 22px;
+    padding-top: 37px;
 }
 
 .logo-title a {
     text-decoration: none;
     color: #e2a6b0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo img {
     width: 150px;
-    margin-left: 15px;
     height: 150px;
 }
 
 .nav-list {
-    list-style: none;
     display: flex;
+    list-style: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-list li {
-    padding: 50px 22px 22px 50px;
+    margin-right: 32px;
+    margin-right: 32px;
 }
 
 .nav-list li a {
@@ -84,7 +87,8 @@ section {
 }
 
 .nav-itens {
-    align-items: center
+    padding-top: 45px;
+    margin-right: 32px;
 }
 
 /* nav fim */
@@ -94,7 +98,7 @@ section {
     background: url(../assets/img/banner1.jpeg) no-repeat
     center center;
     background-size:cover;
-    height: 84vh;
+    height: 86vh;
 }
 /* banner fim */ 
 
@@ -184,57 +188,33 @@ section {
 /* nav inicio */
 
 /* Width */
-
-@media (max-width:1010px) {
-    .nav-contact {
-        display: none;
-    }
-    .nav-itens li {
-        padding-left: 38%;
-    }
-}
-
-@media (max-width:746px) {
+@media (max-width:815px) {
     .nav-itens {
         display: none;
     }
     .nav-itens-responsive {
         display: flex;
+        padding-top: 45px;
     }
-    .logo-title {
+} 
+
+@media (max-width:710px) {
+    .nav-contact {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:590px) {
+    .nav-contact {
         display: none;
     }
 }
 
-@media (max-width: 474px) {
-    .nav-list li {
-        padding: 50px 22px 22px 25px;
+@media (max-width:415px) {
+    .logo-title {
+        display: none;
     }
 }
-
-@media (max-width: 370px) {
-    .nav-list li {
-        padding: 50px 22px 22px 10px;
-    }
-}
-
-/* Height */ 
-
-@media (max-height:679px) {
-    .logo img {
-        height: 125px;
-    }
-}
-@media (max-height:585px) {
-    .logo img {
-        width: 100;
-        height: 95px;
-    }
-    .nav-list li {
-        padding: 35px 22px 22px 10px;
-    }
-}
-
 /* nav fim */
 
 /* fotos inicio */
